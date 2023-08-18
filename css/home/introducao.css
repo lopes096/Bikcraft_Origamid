@@ -1,0 +1,83 @@
+.introducao-bg {
+  background: #111111 url("../../img/dec/bottom-left.svg") no-repeat bottom 160px left 20px;
+  box-shadow: inset 0 -120px #ffffff;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.introducao img{
+  border-radius: 0 0 4px 4px;
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 200px;
+}
+
+.introducao h1 {
+  margin-bottom: 32px;
+}
+
+.introducao p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 860px) {
+  .introducao-bg {
+    background: #111111;
+    padding-top: 20px;
+    box-shadow: inset 0 -60px #ffffff;
+  }
+
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .introducao p {
+    margin-bottom: 20px;
+  }
+  .introducao-conteudo {
+    padding-bottom: 10px;
+  }
+
+  .introducao img {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .introducao-bg {
+    background: #111111;
+    padding-top: 0px;
+  }
+
+  .introducao img {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+/* .introducao p{
+	grid-column: 1;
+}
+
+.introducao a{
+	grid-column: 1;
+}
+
+.introducao img{
+	grid-column: 2;
+	grid-row: 1/3;
+} 
+CASO O H1, P E A ESTIVEREM FORA DA DIV, SERÁ NECESSÁRIO REPOSICIONAR OS 
+ITENS NA GRID*/
